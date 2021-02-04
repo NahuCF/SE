@@ -19,7 +19,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -94,12 +94,14 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Game\Main.cpp" />
     <ClCompile Include="Source\Collision\ColliderBox.cpp" />
     <ClCompile Include="Source\Graphics\Animation.cpp" />
     <ClCompile Include="Source\Graphics\Shader.cpp" />
     <ClCompile Include="Source\Graphics\Texture.cpp" />
     <ClCompile Include="Source\Graphics\Window.cpp" />
     <ClCompile Include="Source\Maths\Vector2D.cpp" />
+    <ClCompile Include="Source\pch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Collision\ColliderBox.h" />
@@ -393,16 +395,15 @@
     <ClInclude Include="Source\Maths\glm\vector_relational.hpp" />
     <ClInclude Include="Source\Graphics\Window.h" />
     <ClInclude Include="Source\Maths\Vector2D.h" />
-    <ClInclude Include="Source\SE.h" />
-    <ClInclude Include="Source\SE\Core.h" />
+    <ClInclude Include="Source\pch.h" />
     <ClInclude Include="src\stb_image\stb_image.h" />
     <ClInclude Include="Source\Vendor\stb_image\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Shaders\shader.fs" />
-    <None Include="Shaders\shader.vs" />
-    <None Include="Shaders\textureShader.fs" />
-    <None Include="Shaders\textureShader.vs" />
+    <None Include="Shaders\Shader.fs" />
+    <None Include="Shaders\Shader.vs" />
+    <None Include="Shaders\TextureShader.fs" />
+    <None Include="Shaders\TextureShader.vs" />
     <None Include="Source\Maths\glm\detail\func_common.inl" />
     <None Include="Source\Maths\glm\detail\func_common_simd.inl" />
     <None Include="Source\Maths\glm\detail\func_exponential.inl" />

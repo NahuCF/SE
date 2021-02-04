@@ -8,7 +8,7 @@
 
 #include "Texture.h"
 
-namespace se {
+namespace SE {
 
 	Texture::Texture(const char* texturePath, float Width, float Height)
 	{

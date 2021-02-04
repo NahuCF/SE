@@ -6,7 +6,7 @@
 
 #include "glm.hpp"
 
-namespace se {
+namespace SE {
 
 	class Shader 
 	{

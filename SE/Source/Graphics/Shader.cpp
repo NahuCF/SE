@@ -6,7 +6,7 @@
 #include "glm.hpp"
 #include "gtc/matrix_transform.hpp"
 
-namespace se {
+namespace SE {
 
 	Shader::Shader(const char* vertexPath, const char* fragmentPath)
 		: m_RealXPos(0), m_RealYPos(0), m_CurrentXPos(0), m_CurrentYPos(0)

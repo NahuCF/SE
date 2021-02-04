@@ -3,9 +3,7 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
-namespace se {
-
-	__declspec(dllexport) void Print();
+namespace SE {
 
 	class Window
 	{
